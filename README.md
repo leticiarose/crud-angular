@@ -1,27 +1,37 @@
-# Cod3r
+## Project Overview
+System that allows the control of the stock of products, which belong to a stationery store. The system should allow registering, listing, filtering, viewing, changing and deleting the stored products
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+### Tecnologias
+  ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+  
+  ![CSS3](https://img.shields.io/badge/-CSS3-549FDE?style=flat-square&logo=css3&logoColor=white)
 
-## Development server
+  ![JavaScript](https://img.shields.io/badge/-JavaScript-F7B93E?style=flat-square&logo=javascript&logoColor=fff)
+  ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=fff)
+![Angular](https://img.shields.io/badge/-Angular-BD002E?style=flat-square&logo=angular&logoColor=white)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### How to clone the repository
+First, you need to clone the repository on your computer to make changes to the code. But before cloning the repository it is important that you perform a ** fork **, that is, create a copy of it for your github. To do this, just go up the page and click on the button of the same name and wait a few minutes. Then, just click ** clone or download ** and copy the repository URL.
 
-## Code scaffolding
+When opening Git bash, to clone, type the following line of code and enter the URL copied previously:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+git clone <url-do-repositorio>
 
-## Build
+### Installing the Dependencies
+To install the project dependencies, just open the IDE terminal of your choice and type the following line:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+npm install
 
-## Running unit tests
+## Starting the Development Server
+To view the application and changes in real time of development, just leave the command below running:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+-ng serve
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Contact me
 
-## Further help
+[![Linkedin Badge](https://img.shields.io/badge/-Letícia_Rose-FF82AB?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/letíciarose/)](https://www.linkedin.com/in/letíciarose/) 
+[![Gmail Badge](https://img.shields.io/badge/-leticia.rosedesanatana@gmail.com-FF82AB?style=flat-square&logo=Gmail&logoColor=white&link=mailto:leticia.rosedesanatana@gmail.com)](mailto:leticia.rosedesanatana@gmail.com)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### Made with ❤️ by Letícia Rose 👉 [Get in touch! ](https://www.linkedin.com/in/let%C3%ADciarose/)
