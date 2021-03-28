@@ -15,17 +15,19 @@ System that allows the control of the stock of products, which belong to a stati
 ## How to clone the repository
 First, you need to clone the repository on your computer to make changes to the code. But before cloning the repository it is important that you perform a ** fork **, that is, create a copy of it for your github. To do this, just go up the page and click on the button of the same name and wait a few minutes. Then, just click ** clone or download ** and copy the repository URL.
 
-When opening Git bash, to clone, type the following line of code and enter the URL copied previously:
+- When opening Git bash, to clone, type the following line of code and enter the URL copied previously:
 
 $ git clone <url-do-repositorio>
 
-## 📥Installing the Dependencies
-To install the project dependencies, just open the IDE terminal of your choice and type the following line:
+## 📥 Installing the Dependencies 📥
+
+- To install the project dependencies, just open the IDE terminal of your choice and type the following line:
 
 $ npm install
 
 ## Starting the Development Server
-To view the application and changes in real time of development, just leave the command below running:
+
+- To view the application and changes in real time of development, just leave the command below running:
 
 $ ng serve
 
