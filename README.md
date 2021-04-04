@@ -1,6 +1,8 @@
 ## 📌Project Overview
 System that allows the control of the stock of products, which belong to a stationery store. The system should allow registering, listing, filtering, viewing, changing and deleting the stored products
 
+![](https://github.com/leticiarose/crud-angular/blob/528fb040531bd2a4fa1a1ae44f915fdffa3aa38a/src/assets/gif/gif%20demonstration.gif)
+
 ## ⚒️ Technology
 
 ### The following tools were used in the construction of the project:  
