@@ -30,6 +30,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ProductReadComponent } from './components/products/product-read/product-read.component';
 import { ProductUpdateComponent } from './components/products/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/products/product-delete/product-delete.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { ProductUpdateComponent } from './components/products/product-update/pro
     ProductCreateComponent,
     ProductReadComponent,
     ProductUpdateComponent,
+    ProductDeleteComponent,
 
   ],
   imports: [

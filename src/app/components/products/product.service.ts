@@ -1,8 +1,9 @@
-import { Product } from './product.model';
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
-import { Observable } from "rxjs";
+import { HttpClient } from "@angular/common/http";
+import { Product } from "./product.model";
+import { Observable, EMPTY } from "rxjs";
+import { map, catchError } from "rxjs/operators";
 
 @Injectable({
   providedIn: 'root'
@@ -39,4 +40,10 @@ export class ProductService {
     const url =`${this.baseApiUrl}/${product.id}`
     return this.http.put<Product>(url, product)
   }
+
+  delete(id: number): Observable<Product> {
+    const url = `${this.baseApiUrl}/${id}`;
+    return this.http.delete<Product>(url);
+  }
+
 }
