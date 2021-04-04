@@ -14,36 +14,57 @@ export class ProductService {
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
-
-  showMessage(msg: string): void {
+  showMessage(msg: string, isError: boolean = false): void {
     this.snackBar.open(msg, "X", {
       duration: 3000,
       horizontalPosition: "right",
-      verticalPosition: "top"
+      verticalPosition: "top",
+      panelClass: isError ? ["msg-error"] : ["msg-success"],
     });
   }
 
   create(product: Product): Observable<Product> {
-    return this.http.post<Product>(this.baseApiUrl, product)
+    return this.http.post<Product>(this.baseApiUrl, product).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
   }
 
+  errorHandler(e: any): Observable<any> {
+    this.showMessage("Ocorreu um erro!", true);
+    return EMPTY;
+  }
+
+
   read(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.baseApiUrl)
+    return this.http.get<Product[]>(this.baseApiUrl).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
   }
 
   readById (id:string): Observable<Product> {
     const url =`${this.baseApiUrl}/${id}`
-    return this.http.get<Product>(url)
+    return this.http.get<Product>(url).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
   }
 
   update(product: Product): Observable<Product> {
     const url =`${this.baseApiUrl}/${product.id}`
-    return this.http.put<Product>(url, product)
+    return this.http.put<Product>(url, product).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
   }
 
   delete(id: number): Observable<Product> {
     const url = `${this.baseApiUrl}/${id}`;
-    return this.http.delete<Product>(url);
+    return this.http.delete<Product>(url).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
   }
 
 }
