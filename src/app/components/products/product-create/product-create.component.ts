@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from './../product.service';
 
-
 @Component({
   selector: 'app-product-create',
   templateUrl: './product-create.component.html',
@@ -11,10 +10,6 @@ import { ProductService } from './../product.service';
 })
 export class ProductCreateComponent implements OnInit {
 
-  // product: Product = {
-  //   name: 'Produto de teste',
-  //   price: 125
-  // }
    product: Product = {
     name: '' ,
     price: null
